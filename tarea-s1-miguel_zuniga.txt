@@ -1,0 +1,24 @@
+    1  pwd
+    2  mkdir proyecto_comandos
+    3  cd proyecto_comandos
+    4  mkdir documentos imagenes scripts
+    5  ls
+    6  cd docuemntos
+    7  cd documentos
+    8  touch texto.txt
+    9  echo "Linea 1" > notas.txt
+   10  echo "Linea 2" >> notas.txt
+   11  echo "Linea 3" >> texto.txt
+   12  echo "Linea 3" >> notas.txt
+   13  cat notas.txt
+   14  cp notas.txt ../scripts/backup_notas.txt
+   15  mv ../scripts/backup_notas.txt ../imagenes/
+   16  ls ../imagenes
+   17  touch resumen.txt
+   18  cat notas.txt > resumen.txt
+   19  echo "Nueva linea de texto sin sobrescribir lo otro" >> resumen.txt
+   20  cat resumen.txt
+   21  rm ../imagenes/backup_notas.txt
+   22  rmdir ../imagenes
+   23  cd ..
+   24  history | tail -n 30 > tarea-s1-miguel_zuniga.txt
